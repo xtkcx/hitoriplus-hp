@@ -3,7 +3,7 @@ import Link from "next/link";
 const posts = [
   {
     title: "Notionでブログを始めてみた",
-    description: "ひとりぷらすのブログ運用方針と、Notionを選んだ理由。",
+    description: "ひとりぷらすのブログ運用方針と、ブログを始めた理由。",
     url: "https://ring-straw-4b3.notion.site/a80900854a3a83058d9f81e4a7aa4849",
     date: "2026.01.29",
   },
