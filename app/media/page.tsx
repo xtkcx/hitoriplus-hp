@@ -22,7 +22,7 @@ export default function MediaPage() {
         </p>
 
         <Link
-          href="#"
+          href="/media/blog"
           className="inline-flex items-center text-sm font-medium text-emerald-600 hover:underline"
         >
           ブログを見る →
