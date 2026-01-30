@@ -9,6 +9,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja" className="h-full bg-white">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="r0Obiw0qs81BqLnzIIdRbkAEtpUlUrtXE9nkMBs8zsk"/>
+      </head>
+
       <body className="min-h-screen bg-white text-gray-900 flex flex-col">
         {/* ヘッダー */}
         <header className="border-b border-emerald-200 bg-white">
@@ -29,7 +35,6 @@ export default function RootLayout({
             {children}
           </div>
         </main>
-
 
         {/* フッター */}
         <footer className="border-t bg-slate-100">
