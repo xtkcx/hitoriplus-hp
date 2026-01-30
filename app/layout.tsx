@@ -1,3 +1,4 @@
+import Script from "next/script";
 import "./globals.css";
 import Link from "next/link";
 import Nav from "./components/Nav";
@@ -10,10 +11,26 @@ export default function RootLayout({
   return (
     <html lang="ja" className="h-full bg-white">
       <head>
+        {/* google search Console */}
         <meta
           name="google-site-verification"
           content="r0Obiw0qs81BqLnzIIdRbkAEtpUlUrtXE9nkMBs8zsk"
         />
+
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          strategy="afterInteractive"
+        />
+        <Script id="ga" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', 'G-43ZBRV2PCX');
+          `}
+        </Script>
       </head>
 
       <body className="min-h-screen bg-white text-gray-900 flex flex-col">
@@ -44,6 +61,6 @@ export default function RootLayout({
           </div>
         </footer>
       </body>
-    </html>
+    </html >
   );
 }
