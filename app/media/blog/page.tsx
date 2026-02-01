@@ -2,6 +2,30 @@ import Link from "next/link";
 
 const posts = [
   {
+    title: "暮らしに合う動画配信サービスの選び方",
+    description: "  使ってわかった違い",
+    url: "https://ring-straw-4b3.notion.site/2fa900854a3a80aaa0bdf49bf8c7d3d8?source=copy_link",
+    date: "2026.02.01",
+  },
+  {
+    title: "それでも残したサブスク3つ",
+    description: "暮らしにプラスだったもの",
+    url: "https://ring-straw-4b3.notion.site/3-2fa900854a3a80fd9cafd71e631a21f7?source=copy_link",
+    date: "2026.02.01",
+  },
+  {
+    title: "正直、解約してよかったサブスクの話",
+    description: "解約理由と気づいたこと",
+    url: "https://ring-straw-4b3.notion.site/2fa900854a3a8087a9d9f123eba5da56?source=copy_link",
+    date: "2026.02.01",
+  },
+  {
+    title: "今まで使ったことあるサブスクを全部まとめてみた",
+    description: "使っている理由と率直な感想",
+    url: "https://ring-straw-4b3.notion.site/2fa900854a3a80f5a2ebfca94386ab36?source=copy_link",
+    date: "2026.02.01",
+  },
+  {
     title: "Notionでブログを始めてみた",
     description: "ひとりぷらすのブログ運用方針と、ブログを始めた理由。",
     url: "https://ring-straw-4b3.notion.site/a80900854a3a83058d9f81e4a7aa4849",
