@@ -2,6 +2,24 @@ import Link from "next/link";
 
 const posts = [
   {
+    title: "生活のサブスク、正直どう？",
+    description: "善し悪し正直レビュー",
+    url: "https://ring-straw-4b3.notion.site/2fb900854a3a80e39f27fed170ff9b09?source=copy_link",
+    date: "2026.02.06",
+  },
+  {
+    title: "節約したい人ほど知っておきたい「生活サブスク」の上手な使い方",
+    description: "使い方次第でむしろ節約!?",
+    url: "https://ring-straw-4b3.notion.site/2fb900854a3a80ddb8b3cdfd181deab8?source=copy_link",
+    date: "2026.02.06",
+  },
+  {
+    title: "暮らしの節約は「サブスクの使い方」で決まる",
+    description: "差が出やすいちょっとした選択",
+    url: "https://ring-straw-4b3.notion.site/2fb900854a3a8092a04de558cadb0fde?source=copy_link",
+    date: "2026.02.06",
+  },
+  {
     title: "暮らしに合う動画配信サービスの選び方",
     description: "  使ってわかった違い",
     url: "https://ring-straw-4b3.notion.site/2fa900854a3a80aaa0bdf49bf8c7d3d8?source=copy_link",
