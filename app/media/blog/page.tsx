@@ -2,8 +2,32 @@ import Link from "next/link";
 
 const posts = [
   {
-    title: "生活のサブスク、正直どう？",
-    description: "善し悪し正直レビュー",
+    title: "生活で意識したい睡眠習慣",
+    description: "",
+    url: "",
+    date: "2026.02.",
+  },
+  {
+    title: "生活で意識したい食事習慣",
+    description: "食事のあれこれ",
+    url: "https://ring-straw-4b3.notion.site/303900854a3a8017bd01ec481f218a24?source=copy_link",
+    date: "2026.02.23",
+  },
+  {
+    title: "日々の貯金習慣の工夫",
+    description: "みんなが気になる貯金のあれこれ",
+    url: "https://ring-straw-4b3.notion.site/303900854a3a8003b90ce63d4dbd9e4f?source=copy_link",
+    date: "2026.02.19",
+  },
+  {
+    title: "お金に関しての生活の工夫",
+    description: "お金と幸福とのバランス",
+    url: "https://ring-straw-4b3.notion.site/303900854a3a8081a16fe87d12926f59?source=copy_link",
+    date: "2026.02.10",
+  },
+  {
+    title: "生活のサブスク、正直どう？使ってよかった＆微妙だった話",
+    description: "忖度なしの正直レビュー",
     url: "https://ring-straw-4b3.notion.site/2fb900854a3a80e39f27fed170ff9b09?source=copy_link",
     date: "2026.02.06",
   },
@@ -74,7 +98,6 @@ export default function BlogPage() {
 
             <h2 className="text-lg font-bold text-gray-900">
               {post.title}
-              {post.url}
             </h2>
 
             <p className="text-sm text-gray-700 leading-relaxed">
