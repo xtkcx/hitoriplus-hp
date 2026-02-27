@@ -1,5 +1,6 @@
 import Link from "next/link";
 import RakutenAd from "@/components/RakutenAd";
+import RakutenBanner from "@/components/RakutenBanner";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
       </section>
 
       <RakutenAd />
+
+      <RakutenBanner />
 
       {/* カード3つ */}
       <section className="grid gap-8 px-4 sm:px-0 sm:grid-cols-2 lg:grid-cols-3">
@@ -66,4 +69,3 @@ function Card({
     </Link>
   );
 }
-
