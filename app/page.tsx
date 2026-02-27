@@ -15,10 +15,6 @@ export default function Home() {
         </p>
       </section>
 
-      <RakutenAd />
-
-      <RakutenBanner />
-
       {/* カード3つ */}
       <section className="grid gap-8 px-4 sm:px-0 sm:grid-cols-2 lg:grid-cols-3">
         <Card
@@ -69,3 +65,5 @@ function Card({
     </Link>
   );
 }
+
+<RakutenBanner />
