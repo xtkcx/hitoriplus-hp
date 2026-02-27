@@ -5,7 +5,6 @@ import Script from "next/script";
 export default function RakutenAd() {
   return (
     <div className="flex justify-center py-6">
-      {/* ① 設定 */}
       <Script id="rakuten-config" strategy="afterInteractive">
         {`
           window.rakuten_design="slide";
@@ -23,7 +22,6 @@ export default function RakutenAd() {
         `}
       </Script>
 
-      {/* ② 楽天JS */}
       <Script
         src="https://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js?20230106"
         strategy="afterInteractive"
