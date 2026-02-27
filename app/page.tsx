@@ -5,13 +5,13 @@ import RakutenBanner from "@/components/RakutenBanner";
 export default function Home() {
   return (
     <div className="space-y-10">
-      {/* ヒーロー */}
+      {/* モットー */}
       <section className="space-y-4">
         <h1 className="text-3xl font-bold tracking-tight text-gray-900">
           ひとりぷらす
         </h1>
         <p className="text-gray-600 text-lg">
-          一人暮らしを、ちょっとラクに。
+          暮らしを、ちょっと「ぷらす」に。
         </p>
       </section>
 
@@ -33,6 +33,9 @@ export default function Home() {
           href="/media"
         />
       </section>
+
+      {/* カードの下にバナー */}
+      <RakutenBanner />
     </div>
   );
 }
@@ -66,4 +69,3 @@ function Card({
   );
 }
 
-<RakutenBanner />
