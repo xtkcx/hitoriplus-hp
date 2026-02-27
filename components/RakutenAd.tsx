@@ -6,8 +6,9 @@ export default function RakutenAd() {
   return (
     <div className="w-full flex justify-center py-6">
       <div className="max-w-[468px] w-full">
+        {/* 楽天が差し込む先を明示 */}
+        <div id="rakuten-widget-area" />
 
-        {/* ① まずwindowに確実に設定 */}
         <Script id="rakuten-config" strategy="beforeInteractive">
           {`
             window.rakuten_design="slide";
@@ -25,12 +26,14 @@ export default function RakutenAd() {
           `}
         </Script>
 
-        {/* ② そのあと楽天JS読み込み */}
         <Script
           src="https://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js?20230106"
           strategy="afterInteractive"
+          onLoad={() => {
+            // ロードはできてるか確認用（ログ出る）
+            console.log("rakuten widget loaded");
+          }}
         />
-
       </div>
     </div>
   );
