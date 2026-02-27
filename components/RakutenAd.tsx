@@ -4,37 +4,30 @@ import Script from "next/script";
 
 export default function RakutenAd() {
   return (
-    <div className="w-full flex justify-center py-6">
-      <div className="max-w-[468px] w-full">
-        {/* 楽天が差し込む先を明示 */}
-        <div id="rakuten-widget-area" />
+    <div className="flex justify-center py-6">
+      {/* ① 設定 */}
+      <Script id="rakuten-config" strategy="afterInteractive">
+        {`
+          window.rakuten_design="slide";
+          window.rakuten_affiliateId="51640869.9fbadec3.5164086b.b27e15c2";
+          window.rakuten_items="ctsmatch";
+          window.rakuten_genreId="0";
+          window.rakuten_size="468x160";
+          window.rakuten_target="_blank";
+          window.rakuten_theme="gray";
+          window.rakuten_border="off";
+          window.rakuten_auto_mode="on";
+          window.rakuten_genre_title="off";
+          window.rakuten_recommend="on";
+          window.rakuten_ts="1772196415730";
+        `}
+      </Script>
 
-        <Script id="rakuten-config" strategy="beforeInteractive">
-          {`
-            window.rakuten_design="slide";
-            window.rakuten_affiliateId="51640869.9fbadec3.5164086b.b27e15c2";
-            window.rakuten_items="ctsmatch";
-            window.rakuten_genreId="0";
-            window.rakuten_size="468x160";
-            window.rakuten_target="_blank";
-            window.rakuten_theme="gray";
-            window.rakuten_border="off";
-            window.rakuten_auto_mode="on";
-            window.rakuten_genre_title="off";
-            window.rakuten_recommend="on";
-            window.rakuten_ts="1772194283288";
-          `}
-        </Script>
-
-        <Script
-          src="https://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js?20230106"
-          strategy="afterInteractive"
-          onLoad={() => {
-            // ロードはできてるか確認用（ログ出る）
-            console.log("rakuten widget loaded");
-          }}
-        />
-      </div>
+      {/* ② 楽天JS */}
+      <Script
+        src="https://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js?20230106"
+        strategy="afterInteractive"
+      />
     </div>
   );
 }
