@@ -1,10 +1,11 @@
 "use client";
-
 import Script from "next/script";
 
 export default function RakutenAd() {
   return (
-    <>
+    <div className="flex justify-center py-6">
+      <div id="rakuten-area" />
+
       <Script id="rakuten-config" strategy="afterInteractive">
         {`
           window.rakuten_design="slide";
@@ -26,6 +27,6 @@ export default function RakutenAd() {
         src="https://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js?20230106"
         strategy="afterInteractive"
       />
-    </>
+    </div>
   );
 }
