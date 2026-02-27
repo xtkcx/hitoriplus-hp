@@ -2,12 +2,6 @@ import Link from "next/link";
 
 const posts = [
   {
-    title: "生活で意識したい睡眠習慣",
-    description: "",
-    url: "",
-    date: "2026.02.",
-  },
-  {
     title: "生活で意識したい食事習慣",
     description: "食事のあれこれ",
     url: "https://ring-straw-4b3.notion.site/303900854a3a8017bd01ec481f218a24?source=copy_link",
