@@ -74,6 +74,7 @@ export default function BlogPage() {
 
             <h2 className="text-lg font-bold text-gray-900">
               {post.title}
+              {post.url}
             </h2>
 
             <p className="text-sm text-gray-700 leading-relaxed">

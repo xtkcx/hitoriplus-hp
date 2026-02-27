@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RakutenAd from "@/components/RakutenAd";
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
           一人暮らしを、ちょっとラクに。
         </p>
       </section>
+
+      <RakutenAd />
 
       {/* カード3つ */}
       <section className="grid gap-8 px-4 sm:px-0 sm:grid-cols-2 lg:grid-cols-3">
