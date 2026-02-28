@@ -20,17 +20,17 @@ export default function Home() {
         <Card
           title="宅配・食"
           desc="自炊が面倒な日に頼れるサービスを、実体験ベースで紹介。"
-          href="/media"
+          href="/blog"
         />
         <Card
           title="動画・娯楽"
           desc="インドアな一人暮らしを快適にするサブスクを比較。"
-          href="/media"
+          href="/blog"
         />
         <Card
           title="家計・管理"
           desc="サブスク整理や無駄を減らす考え方をまとめています。"
-          href="/media"
+          href="/blog"
         />
       </section>
 
